@@ -137,6 +137,31 @@
     font-size: 1.1em;
 }
 
-.column_row3_submit input:hover{
-    background-color: red;
+.column_row3_submit_1 input{
+    border: 1px #2196f7 solid; 
+    background-color: white; 
+    color: #2196f7;
+}
+
+.column_row3_submit_2 input{
+    background-color: #6c136f; 
+    color: white; 
+    border: 1px #6c136f solid
+}
+
+.column_row3_submit_3 input{
+    background-color: white;
+    border: 1px #5bbd4b solid; 
+    color: #5bbd4b
+}
+
+.column_row3_submit_1 > input:hover{
+    background-color: gainsboro;
+}
+.column_row3_submit_2 > input:hover{
+    background-color: gainsboro;
+}
+
+.column_row3_submit_3 > input:hover{
+    background-color: gainsboro;
 }
