@@ -5,8 +5,8 @@
 
 .container_fluid{
     min-height: 1088px;
-    background-color: #cad3d3;
     margin: auto;
+    background-color: #cad3d3;
 }
 
 .container{
@@ -22,22 +22,20 @@
 
 .column{
     min-width: 362px;
-}
-
-.column:nth-child(2){
-    padding: 0 42px;
+    &:nth-child(2){
+        padding: 0 42px;
+    }
 }
 
 .column_row1{
     position: relative;
     height: 272px;
     color:white;
-}
-
-.column_row1 img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .column_row1_price{
@@ -51,12 +49,10 @@
     font-size: 16px;
     color: beige;
     z-index: 1;
-}
-
-.column_row1_price > p:first-child{
-    font-size: 30px;
-    padding-top: 30%;
-    /* font-weight: 400; */
+    p:first-child{
+        font-size: 30px;
+        padding-top: 30%;
+    }
 }
 
 .column_row1_text{
@@ -64,23 +60,23 @@
     font-size: 36px;
     text-align: center;
     top: 40%;
-    /* z-index: 1; */
 }
 
-.column_row1_mark > img{
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    top: -30px;
-    left: -20px;
-}
-
-.column_row1_mark > p{
-    color: white;
-    position: absolute;
-    font-size: 12px;
-    top: -5px;
-    left: 0px;
+.column_row1_mark{
+    img{
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        top: -30px;
+        left: -20px;
+    }
+    p{
+        color: white;
+        position: absolute;
+        font-size: 12px;
+        top: -5px;
+        left: 0px;
+    }
 }
 
 .column_row1_overlay{
@@ -97,44 +93,41 @@
     padding: 1.5em 1em;
 }
 
-.column_row2_cnt > p:first-child{
-    font-size: 24px;
-    color: #6a7b88;
-}
-
-.column_row2_cnt > p:last-child{
-    color: #dde2e6;
+.column_row2_cnt {
+    p:first-child{
+        font-size: 24px;
+        color: #6a7b88;
+    }
+    p:last-child{
+        color: #dde2e6;
+    }
 }
 
 .column_row2_list{
     color: #5f727f;
     line-height: 50px;
     font-size: 16px;
-}
-
-.column_row2_list > ul{
-    list-style-type: none;
-    text-align: center;
-}
-
-.column_row2_list > ul > li:nth-child(odd){
-    background-color: #f4f6f7;
-}
-
-.column_row2_list > ul > li:nth-child(even){
-    background-color: white;
+    ul{
+        list-style-type: none;
+        text-align: center;
+        li:nth-child(odd){
+            background-color: #f4f6f7;      
+        }
+        li:nth-child(even){
+            background-color: white;
+        }
+    }
 }
 
 .column_row3{
     background-color: white;
     padding: 50px 0;
-}
-
-.column_row3 input{
-    margin-left: 100px;
-    width: 172px;
-    height: 50px;
-    font-size: 1.1em;
+    input{
+        margin-left: 100px;
+        width: 172px;
+        height: 50px;
+        font-size: 1.1em;
+    }
 }
 
 .column_row3_submit_1 input{
