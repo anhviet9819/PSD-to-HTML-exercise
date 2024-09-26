@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container_fluid {
+  min-height: 1088px;
+  margin: auto;
+  background-color: #cad3d3;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  top: 170px;
+}
+
+.container_flex {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.column {
+  min-width: 362px;
+}
+.column:nth-child(2) {
+  padding: 0 42px;
+}
+
+.column_row1 {
+  position: relative;
+  height: 272px;
+  color: white;
+}
+.column_row1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.column_row1_price {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  left: 121px;
+  top: -20%;
+  font-size: 16px;
+  color: beige;
+  z-index: 1;
+}
+.column_row1_price p:first-child {
+  font-size: 30px;
+  padding-top: 30%;
+  /* font-weight: 400; */
+}
+
+.column_row1_text {
+  position: relative;
+  font-size: 36px;
+  text-align: center;
+  top: 40%;
+}
+
+.column_row1_mark img {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: -30px;
+  left: -20px;
+}
+.column_row1_mark p {
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  top: -5px;
+  left: 0px;
+}
+
+.column_row1_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.column_row2 {
+  background-color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+.column_row2_cnt p:first-child {
+  font-size: 24px;
+  color: #6a7b88;
+}
+.column_row2_cnt p:last-child {
+  color: #dde2e6;
+}
+
+.column_row2_list {
+  color: #5f727f;
+  line-height: 50px;
+  font-size: 16px;
+}
+.column_row2_list ul {
+  list-style-type: none;
+  text-align: center;
+}
+.column_row2_list ul li:nth-child(odd) {
+  background-color: #f4f6f7;
+}
+.column_row2_list ul li:nth-child(even) {
+  background-color: white;
+}
+
+.column_row3 {
+  background-color: white;
+  padding: 50px 0;
+}
+.column_row3 input {
+  margin-left: 100px;
+  width: 172px;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+.column_row3_submit_1 input {
+  border: 1px #2196f7 solid;
+  background-color: white;
+  color: #2196f7;
+}
+
+.column_row3_submit_2 input {
+  background-color: #6c136f;
+  color: white;
+  border: 1px #6c136f solid;
+}
+
+.column_row3_submit_3 input {
+  background-color: white;
+  border: 1px #5bbd4b solid;
+  color: #5bbd4b;
+}
+
+.column_row3_submit_1 > input:hover {
+  background-color: gainsboro;
+}
+
+.column_row3_submit_2 > input:hover {
+  background-color: gainsboro;
+}
+
+.column_row3_submit_3 > input:hover {
+  background-color: gainsboro;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* Hide the images by default */
+.column {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
